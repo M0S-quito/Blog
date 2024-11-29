@@ -6,8 +6,8 @@ categories: [Tutorial, Github 블로그 만들기]
 tags: [writing]
 pin: True
 ---
-솔직히 현대 사회를 살아 가며 개인 블로그 하나 정도는 있어야 하지 않을까?<br>
-GitHub Pages와 Jekyll을 사용해 간단하게 무료 블로그를 하나 구축해 보자!!!
+
+# GitHub Pages와 Jekyll을 사용해 간단하게 무료 블로그를 하나 구축해 보자!!!
 
 ## Step 0. 준비물
 - Windows 64bit

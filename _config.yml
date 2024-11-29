@@ -16,7 +16,7 @@ timezone: Asia/Seoul
 
 title: M0S-quito # the xmain title
 
-tagline: 내가 보려고 만든 M0S-quito의 저장소 # it will display as the subtitle
+tagline: M0S-quito의 저장소 # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
