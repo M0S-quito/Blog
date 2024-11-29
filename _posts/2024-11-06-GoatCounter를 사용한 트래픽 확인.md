@@ -25,12 +25,41 @@ pin: True
 
 ## Step 2. 내 웹사이트 파일에 설정
 
-#### 2-1. 웹사이트 head부분에  
+#### 2-1 config.yml
+
+```
+# Web Analytics Settings
+analytics:
+  google:
+    id: # fill in your Google Analytics ID
+  goatcounter:
+    id: m0squitoblog  <- 요부분에 goatcount ID(mycode부분) 입력
+  umami:
+    id: # fill in your Umami ID
+    domain: # fill in your Umami domain
+  matomo:
+    id: # fill in your Matomo ID
+    domain: # fill in your Matomo domain
+  cloudflare:
+    id: # fill in your Cloudflare Web Analytics token
+  fathom:
+    id: # fill in your Fathom Site ID
+```
+
+설정 후 바로 아래에
+
+```
+# Page views settings
+pageviews:
+  provider: 'goatcounter' <- 여기다 goatcount입력
+```
+
+#### 만약 `chirpy`테마가 아니라면?
 1. goatcounter에서 주는 script구분 복사
 2. _layout 이나 _head와 같은 파일 즉, 모든 html에 head에 들어가는 부분에 삽입
     - 이거 body에도 해도 되는데 어디서 읽어 오냐 차이라 head에 두는게 빨리 정보가 들어옴
 
-#### 2-2(선택). 만약 내가 github의 root(username.github.io)이외에 다른 리포지토리로 웹사이트를 운영 한다면?
-- 각각의 웹 사이트에 다 **1-2**을 적용 해야함 
+##### 만약 내가 github의 root(username.github.io)이외에 다른 리포지토리로 웹사이트를 운영 한다면?
+- 각각의 웹 사이트에 위 코드를 따로 삽입 해야 한다.
 
 
