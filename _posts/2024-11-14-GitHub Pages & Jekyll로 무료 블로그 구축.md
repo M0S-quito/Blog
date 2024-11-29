@@ -2,7 +2,7 @@
 title: GitHub와 Jekyll로 블로그 구축
 author: M0S-quito
 date: 2024-11-14 14:10:00 +0800
-categories: [Blogging, Tutorial]
+categories: [Github 블로그 만들기, Tutorial]
 tags: [writing]
 pin: True
 ---

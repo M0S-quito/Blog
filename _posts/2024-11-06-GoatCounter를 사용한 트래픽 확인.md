@@ -1,8 +1,8 @@
 ---
-title: GoatCounter를 사용한 트래픽 확인
+title: GoatCounter를 사용한 블로그 트래픽 확인
 author: M0S-quito
 date: 2024-11-14 14:10:00 +0800
-categories: [Blogging, Tutorial]
+categories: [Github 블로그 만들기, Tutorial]
 tags: [writing]
 pin: True
 ---
