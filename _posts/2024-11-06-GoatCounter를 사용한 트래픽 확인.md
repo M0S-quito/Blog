@@ -6,60 +6,72 @@ categories: [Tutorial, Github 블로그 만들기]
 tags: [writing]
 pin: True
 ---
-## GoatCounter란?
-웹 사이트의 트래픽을 분석하는 웹 분석 도구<br>
-즉, 내 웹사이트에 사람들이 얼마나 많이 들어왔는지를 알 수 있다!!
+# GoatCounter: 웹 트래픽 분석 도구 설정하기 📊
 
-## Step 1. GoatCounter사이트 세팅
-- [goatcounter 공식 사이트](https://www.goatcounter.com/) 접속
+GoatCounter는 웹사이트의 방문자 수를 확인할 수 있는 **웹 분석 도구**이다. 간단한 설정으로 내 웹사이트에 적용해보자.
 
-#### 1-1. 회원 가입 창
-1. **Code**: 내 트래픽을 확인할 goatcounter주소 이름
-    - 에를 들어 **M0Squito -> https://M0Squito.goatcounter.com**으로 접속 가능
-2. **Site domain**: 내 사이트 도메인, **https://username.github.io** 작성
-    - 에를 들어 github닉네임이 M0S-quito라면 https://M0S-quito.github.io 작성
-3. **Email address**: 개인 이메일 주소 작성, 나중에 로그인 할 때나 계정 설정 할 때 사용
-4. **Password**: 내 goatcounter에 접속할 때 사용할 비밀번호 작성
-5. **fill~here**: 로봇이 아닙니다 체크 같은거임 그냥 '~' 에 들어가는 숫자 넣으면 됨
+---
 
+## Step 1: GoatCounter 사이트에서 계정 생성
 
-## Step 2. 내 웹사이트 파일에 설정
+1. **[GoatCounter 공식 사이트](https://www.goatcounter.com/)** 접속.
+2. 회원가입 창에서 다음 정보를 입력:
+   - **Code**: GoatCounter 주소 이름 (예: `M0Squito` → `https://M0Squito.goatcounter.com`).
+   - **Site domain**: 내 사이트 도메인 입력 (예: `https://M0S-quito.github.io`).
+   - **Email address**: 개인 이메일 주소 작성.
+   - **Password**: GoatCounter 로그인에 사용할 비밀번호 설정.
+   - **fill~here**: 로봇 인증 숫자 입력.
+3. 가입 후 계정이 생성되며 트래픽 분석 시작 가능.
 
-#### 2-1 config.yml
+---
 
-```
+## Step 2: GoatCounter 내 웹사이트에 설정
+
+### 2-1. `config.yml` 파일 수정
+GoatCounter ID를 추가하여 설정.
+
+```yaml
 # Web Analytics Settings
 analytics:
   google:
-    id: # fill in your Google Analytics ID
+    id: # Google Analytics ID (사용하지 않으면 공란)
   goatcounter:
-    id: m0squitoblog  <- 요부분에 goatcount ID(mycode부분) 입력
+    id: m0squitoblog # GoatCounter의 코드 입력
   umami:
-    id: # fill in your Umami ID
-    domain: # fill in your Umami domain
+    id: # Umami ID
+    domain: # Umami 도메인
   matomo:
-    id: # fill in your Matomo ID
-    domain: # fill in your Matomo domain
+    id: # Matomo ID
+    domain: # Matomo 도메인
   cloudflare:
-    id: # fill in your Cloudflare Web Analytics token
+    id: # Cloudflare Web Analytics 토큰
   fathom:
-    id: # fill in your Fathom Site ID
+    id: # Fathom Site ID
 ```
 
-설정 후 바로 아래에
+### 2-2. 페이지뷰 제공자 설정
+GoatCounter를 페이지뷰 제공자로 지정.
 
-```
+```yaml
 # Page views settings
 pageviews:
-  provider: 'goatcounter' <- 여기다 goatcount입력
+  provider: 'goatcounter' # GoatCounter로 설정
 ```
 
-#### 만약 `chirpy`테마가 아니라면?
-1. goatcounter에서 주는 script구분 복사
-2. _layout 이나 _head와 같은 파일 즉, 모든 html에 head에 들어가는 부분에 삽입
-    - 이거 body에도 해도 되는데 어디서 읽어 오냐 차이라 head에 두는게 빨리 정보가 들어옴
+---
 
-##### 만약 내가 github의 root(username.github.io)이외에 다른 리포지토리로 웹사이트를 운영 한다면?
-- 각각의 웹 사이트에 위 코드를 따로 삽입 해야 한다.
+## Step 3: `chirpy` 테마가 아닌 경우
 
+### 3-1. GoatCounter 스크립트 삽입
+1. GoatCounter에서 제공하는 **script 코드**를 복사.
+2. `_layout` 또는 `_head` 파일에 추가.
+   - 일반적으로 `<head>` 태그에 추가하면 빠르게 정보를 수집할 수 있음.
+   - `<body>`에 추가해도 동작하나, 수집 속도 차이가 있을 수 있음.
+
+### 3-2. GitHub Root 외 다른 리포지토리 운영 시
+- 여러 웹사이트를 운영 중이라면 각각의 웹사이트에 위 설정을 개별적으로 삽입.
+
+---
+
+> "GoatCounter로 내 웹사이트의 방문자를 효과적으로 분석해보자!" 🚀
 
