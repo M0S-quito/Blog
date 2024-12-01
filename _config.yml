@@ -16,7 +16,7 @@ timezone: Asia/Seoul
 
 title: M0S-quito # the xmain title
 
-tagline: M0S-quito의 저장소 # it will display as the subtitle
+tagline: <h4 style="color:red;">431</h4> Request Test Fields Too Large # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
@@ -98,11 +98,11 @@ theme_mode: dark
 cdn: "https://chirpy-img.netlify.app"
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/Blog/assets/img/favicons/avatar.png"
+avatar: "Blog/assets/img/avatar.png"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
-social_preview_image: "/Blog/assets/img/favicons/avatar.png"
+social_preview_image: "{{ site.baseurl }}/assets/img/favicons/avatar.jpg"
 
 # boolean type, the global switch for TOC in posts.
 toc: true
