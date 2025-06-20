@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://m0s-quito.github.io/Blog/sitemap.xml
