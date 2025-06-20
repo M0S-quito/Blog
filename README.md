@@ -1,43 +1,32 @@
-# Chirpy Starter
+# 🛠️ M0S-quito's Dev Blog
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+> Powered by [Chirpy Jekyll Theme](https://github.com/cotes2020/jekyll-theme-chirpy)
 
-When installing the [**Chirpy**][chirpy] theme through [RubyGems.org][gem], Jekyll can only read files in the folders
-`_data`, `_layouts`, `_includes`, `_sass` and `assets`, as well as a small part of options of the `_config.yml` file
-from the theme's gem. If you have ever installed this theme gem, you can use the command
-`bundle info --path jekyll-theme-chirpy` to locate these files.
+이 저장소는 나 **M0S-quito**의 기술 블로그를 위한 개인 리포입니다.  
+프론트엔드, 백엔드, AI, 삽질기, 실험기, 팁 등을 기록하며 꾸준히 채워나가는 중입니다.
 
-The Jekyll team claims that this is to leave the ball in the user’s court, but this also results in users not being
-able to enjoy the out-of-the-box experience when using feature-rich themes.
+사이트는 GitHub Pages + Jekyll 기반이며, 블로그 테마로는 [**Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy)를 사용하고 있습니다.
 
-To fully use all the features of **Chirpy**, you need to copy the other critical files from the theme's gem to your
-Jekyll site. The following is a list of targets:
+## 📌 블로그 바로가기
 
-```shell
+👉 [https://m0s-quito.github.io/Blog/](https://m0s-quito.github.io/Blog/)
+
+## 📁 구조
+
+```text
 .
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
+├── _posts         # 글 본문 (Markdown)
+├── _tabs          # 블로그 탭 설정
+├── assets         # 정적 리소스 (이미지, JS, CSS)
+├── _config.yml    # 블로그 설정
+└── index.html     # 홈 페이지
 ```
 
-To save you time, and also in case you lose some files while copying, we extract those files/configurations of the
-latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so that you can start writing in minutes.
+## 🔧 셋업 정보
 
-## Usage
+이 블로그는 Chirpy 테마를 직접 설치하고 필요한 파일들을 로컬에 복사하여 커스터마이징했습니다.  
+테마 설치와 관련한 자세한 내용은 [Chirpy 공식 문서](https://github.com/cotes2020/jekyll-theme-chirpy/wiki)를 참고하세요.
 
-Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
+## 📜 라이선스
 
-## Contributing
-
-This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.
-
-## License
-
-This work is published under [MIT][mit] License.
-
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+이 블로그는 [MIT License](https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE)를 따릅니다.
