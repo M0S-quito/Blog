@@ -224,9 +224,3 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
-
-author:
-  name: M0S-quito
-  bio: "주인장"
-  email: zoojark040815@gmail.com
-  url: https://github.com/M0S-quito
