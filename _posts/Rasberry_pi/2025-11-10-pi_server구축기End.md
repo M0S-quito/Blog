@@ -107,4 +107,5 @@ bash (라즈베리 파이 내부 셸 환경)
 
 ---
 
-← 이전 글: [Pi-Server 구축기 6편: Zero Trust로 보안 설정하기](./2025-11-10-pi_server구축기6편/index.html)
+← 이전 글: [Pi-Server 구축기 6편: Zero Trust로 보안 설정하기](../pi_server구축기6편/)
+
