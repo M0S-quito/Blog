@@ -1,6 +1,6 @@
 ---
 title: "🛠️ Pi-Server만들기 ssh연결편: cloudflared기반 SSH열기"
-date: 2025-11-07 15:00:00 +0900
+date: 2026-01-19 15:00:00 +0900
 categories: [Raspberry, Tutorial]
 tags: [raspberrypi, server]
 pin: True
